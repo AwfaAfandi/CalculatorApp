@@ -3,9 +3,11 @@ package com.amaa.calculatorapp
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.amaa.calculatorapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
      private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,16 +18,13 @@ class MainActivity : AppCompatActivity() {
         binding.Plusbutton.setOnClickListener {
             adding()
         }
-
         binding.Minusbutton2.setOnClickListener {
             minus()
         }
-
         binding.devidebutton3.setOnClickListener {
             divide()
         }
-
-    }
+        }
 
      private fun adding() {
 
@@ -35,19 +34,14 @@ class MainActivity : AppCompatActivity() {
         val num2 = stringInTextField2.toDouble()
 
          var total = num1 + num2
-
          var stringtotal = total.toString()
-
          binding.textView.text = getString(R.string.total,stringtotal )
 
 
-
-    }
+       }
 
 
     private fun divide() {
-
-
 
         val stringInTextField1 = binding.num1text.text.toString()
         val num1 = stringInTextField1.toDouble()
@@ -56,17 +50,12 @@ class MainActivity : AppCompatActivity() {
 
         var total = num1 / num2
         var stringtotal = total.toString()
-
         binding.textView.text = getString(R.string.total,stringtotal )
-
-
-
-
 
     }
 
-    private fun minus() {
 
+    private fun minus() {
 
         val stringInTextField1 = binding.num1text.text.toString()
         val num1 = stringInTextField1.toDouble()
@@ -78,9 +67,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.textView.text = getString(R.string.total,stringtotal )
 
-
-
     }
-
 
 }

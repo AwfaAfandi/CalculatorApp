@@ -13,7 +13,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="128dp"
         android:ems="10"
-        android:hint="Enter First Number"
+        android:hint="@string/enter_first_number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,38 +24,44 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Enter Second number"
+        android:hint="@string/enter_second_number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num1text" />
 
+
     <Button
         android:id="@+id/Plusbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
-        android:text="+"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/plus"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num2text" />
 
     <Button
         android:id="@+id/Minusbutton2"
-        android:layout_width="88dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="84dp"
-        android:text="-"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/minus"
         android:textSize="32sp"
         app:layout_constraintStart_toEndOf="@+id/Plusbutton"
         app:layout_constraintTop_toBottomOf="@+id/num2text" />
 
     <Button
         android:id="@+id/devidebutton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="84dp"
-        android:text="/"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/circle_button"
+        android:text="@string/devide"
+        android:textSize="32sp"
         app:layout_constraintStart_toEndOf="@+id/Minusbutton2"
         app:layout_constraintTop_toBottomOf="@+id/num2text" />
 
