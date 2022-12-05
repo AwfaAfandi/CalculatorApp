@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">CalculatorApp</string>
-    <string name="total">( %s )</string>
+    <string name="total">Result = ( %s )</string>
     <string name="enter_first_number">Enter First Number</string>
     <string name="enter_second_number">Enter Second number</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="devide">/</string>
+    <string name="Division">/</string>
 </resources>
